@@ -162,7 +162,7 @@ func (v4 *signer) buildCanonicalHeaders() {
 func (v4 *signer) buildCanonicalString() {
 	v4.canonicalString = strings.Join([]string{
 		v4.Request.Method,
-		v4.Request.URL.Path,
+		v4.Request.URL.RequestURI(),
 		v4.Request.URL.Query().Encode(),
 		v4.canonicalHeaders + "\n",
 		v4.signedHeaders,

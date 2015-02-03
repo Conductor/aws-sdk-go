@@ -49,7 +49,7 @@ func TestSignRequest(t *testing.T) {
     AWS4-HMAC-SHA256
     Credential=AKID/19700101/us-east-1/dynamodb/aws4_request,
     SignedHeaders=content-type;host;x-amz-security-token;x-amz-target,
-    Signature=4662104789134800e088b6a2bf3a1153ca7d38ecfc07a69bff2859f04900b67f
+    Signature=2a7e89071c6876ffc419f9d3fb7e09800da5bc980059608e24e6e9fd4aca3370
   `
 
 	assertEqual(t, expectedAuth, signer.Request.Header.Get("Authorization"))
