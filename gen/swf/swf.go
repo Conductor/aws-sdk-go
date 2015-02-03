@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/awslabs/aws-sdk-go/aws"
-	"github.com/awslabs/aws-sdk-go/gen/endpoints"
+	"github.com/Conductor/aws-sdk-go/aws"
+	"github.com/Conductor/aws-sdk-go/gen/endpoints"
 )
 
 // SWF is a client for Amazon Simple Workflow Service.
